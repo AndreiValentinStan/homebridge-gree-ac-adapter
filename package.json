@@ -1,5 +1,4 @@
 {
-  "private": true,
   "displayName": "Homebridge Gree AC Adapter",
   "name": "homebridge-gree-ac-adapter",
   "version": "1.0.0",
