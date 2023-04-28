@@ -3,71 +3,65 @@
   "pluginType": "platform",
   "singular": true,
   "schema": {
+    "type": "object",
     "properties": {
-      "options": {
-        "title": "Gree AC Adapter Options",
-        "type": "object",
+      "port": {
+        "title": "Port",
+        "type": "integer",
+        "default": 7000,
+        "minimum": 1024,
+        "maximum": 49151,
         "required": true,
-        "properties": {
-          "port": {
-            "title": "Port",
-            "type": "integer",
-            "default": 7000,
-            "minimum": 1024,
-            "maximum": 49151,
-            "required": true,
-            "description": "Port used for communicating with the device."
-          },
-          "scanPort": {
-            "title": "Scan Port",
-            "type": "integer",
-            "default": 7000,
-            "minimum": 1024,
-            "maximum": 49151,
-            "required": true,
-            "description": "Port used for scanning for devices."
-          },
-          "scanAddress": {
-            "title": "Scan Address",
-            "type": "string",
-            "format": "ipv4",
-            "required": true,
-            "description": "The IPv4 address to be used for local network device scanning."
-          },
-          "scanInterval": {
-            "title": "Scan Interval",
-            "type": "integer",
-            "default": 1000,
-            "minimum": 1000,
-            "maximum": 3000,
-            "required": true,
-            "description": "Time in milliseconds between two consecutive scans."
-          },
-          "scanMaxRetries": {
-            "title": "Scan Max Retries",
-            "type": "integer",
-            "default": 3,
-            "minimum": 1,
-            "maximum": 5,
-            "required": true,
-            "description": "Maximum number of retries before stopping the scan process."
-          },
-          "refreshInterval": {
-            "title": "Refresh Interval",
-            "type": "integer",
-            "default": 1000,
-            "minimum": 1000,
-            "maximum": 2000,
-            "required": true,
-            "description": "Time in milliseconds between device` status update requests."
-          },
-          "debug": {
-            "title": "Enable Debug Mode",
-            "type": "boolean",
-            "default": false,
-            "required": true
-          }
-        }
+        "description": "Port used for communicating with the device."
+      },
+      "scanPort": {
+        "title": "Scan Port",
+        "type": "integer",
+        "default": 7000,
+        "minimum": 1024,
+        "maximum": 49151,
+        "required": true,
+        "description": "Port used for scanning for devices."
+      },
+      "scanAddress": {
+        "title": "Scan Address",
+        "type": "string",
+        "format": "ipv4",
+        "required": true,
+        "description": "The IPv4 address to be used for local network device scanning."
+      },
+      "scanInterval": {
+        "title": "Scan Interval",
+        "type": "integer",
+        "default": 1000,
+        "minimum": 1000,
+        "maximum": 3000,
+        "required": true,
+        "description": "Time in milliseconds between two consecutive scans."
+      },
+      "scanMaxRetries": {
+        "title": "Scan Max Retries",
+        "type": "integer",
+        "default": 3,
+        "minimum": 1,
+        "maximum": 5,
+        "required": true,
+        "description": "Maximum number of retries before stopping the scan process."
+      },
+      "refreshInterval": {
+        "title": "Refresh Interval",
+        "type": "integer",
+        "default": 1000,
+        "minimum": 1000,
+        "maximum": 2000,
+        "required": true,
+        "description": "Time in milliseconds between device` status update requests."
+      },
+      "debug": {
+        "title": "Enable Debug Mode",
+        "type": "boolean",
+        "default": false,
+        "required": true
       }
     }
   }
