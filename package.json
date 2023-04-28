@@ -23,9 +23,8 @@
     "prepublishOnly": "npm run lint && npm run build"
   },
   "keywords": [
+    "homebridge-plugin",
     "gree",
-    "homebridge",
-    "heater cooler",
     "air conditioner"
   ],
   "dependencies": {},
