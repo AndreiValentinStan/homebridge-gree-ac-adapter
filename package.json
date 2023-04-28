@@ -1,7 +1,7 @@
 {
   "displayName": "Homebridge Gree AC Adapter",
   "name": "homebridge-gree-ac-adapter",
-  "version": "v1.0.0-beta.6",
+  "version": "v1.0.0-beta.7",
   "description": "This Homebridge plugin is an adapter for the Gree ACs.",
   "license": "Apache-2.0",
   "repository": {
